@@ -11,17 +11,21 @@
 <body class="stackedit">
   <div class="stackedit__html"><h2 id="bitcoin-transaction-fees-and-utxo-management">Bitcoin Transaction Fees and UTXO Management</h2>
 <ul>
+<li>bitcoin transaction fees limit network abuse by making usage expensive</li>
+<li>there is a cost to every transaction, set by a dynamic free market based on demand</li>
+<li>it is an incredibly robust way to prevent spam without relying on centralized entities that can be corrupted or pressured</li>
 <li>when bitcoin blocks are full, highest fee transactions are confirmed first</li>
 <li>pending transactions sit in node mempools awaiting confirmation: can conceptualize mempools as a line to enter a restaurant sorted by who is willing to pay the most</li>
+<li>if you are willing to wait for your transaction to confirm you can pay significantly lower fees</li>
 <li>your bitcoin wallet may show a single balance but the reality is that it is made of many different unspent transaction outputs (UTXOs)</li>
 <li>when you make a bitcoin transaction your wallet will select as many UTXOs as necessary to reach the amount of bitcoin you wish to send</li>
 <li>onchain transaction fees are calculated based on size in bytes not the amount of sats sent</li>
-<li>the more utxos required on the input side the higher the fee paid</li>
+<li>the more UTXOs required on the input side the higher the fee paid</li>
 <li>from a cost perspective you want to consolidate UTXOs, fewer UTXOs with larger amounts</li>
 <li>consolidation has privacy tradeoffs though: you link any UTXOs you consolidate as owned by the same person + larger UTXOs mean you will dox more of your stack to anyone you pay in the future</li>
 </ul>
 <p><strong>Therefore you want to reduce the number of UTXOs you have while being mindful of the privacy concerns.</strong></p>
-<p>Lightning Transaction fees are calculated differently: based on the amount in sats sent. Opening lightning channels when fees are low can enable you to save money in the future when fees rise. 🤙</p>
+<p>Lightning Transaction fees are calculated differently: based on the amount in sats sent. Opening <a href="https://www.discreetlog.com/the-lightning-network-does-not-exist/">lightning channels</a> when fees are low can enable you to save money in the future when fees rise. 🤙</p>
 <hr>
 <h2 id="if-you-find-this-guide-helpful-support-my-work-with-bitcoin.-">If you find this guide helpful support my work with <a href="https://geyser.fund/project/citadel">bitcoin</a>. <img src="https://werunbtc.com/donate.png" alt="donate"></h2>
 <h6 id="the-content-above-provides-education-as-to-general-privacy-and-security-practices-when-using-bitcoin.-should-you-choose-to-apply-the-practices-described-in-linked-content-with-bitcoin-you-own-now-or-may-purchase-in-the-future-you-do-so-at-your-own-risk-and-i-shall-in-no-event-be-liable-for-any-financial-loss-suffered.-nothing-shall-be-construed-as-providing-consulting-financial-advice-or-general-advice-as-to-securing-bitcoin."><em>The content above provides education as to general privacy and security practices when using bitcoin. Should you choose to apply the practices described in linked content with bitcoin you own now or may purchase in the future, you do so at your own risk and I shall in no event be liable for any financial loss suffered. Nothing shall be construed as providing consulting, financial advice or general advice as to securing bitcoin.</em></h6>
